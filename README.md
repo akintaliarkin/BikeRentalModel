@@ -1,6 +1,5 @@
 # Project Name
-> Outline a brief description of your project.
-
+> Build a multiple linear regression model for the prediction of demand for shared bikes.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -11,38 +10,41 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. We want to understand the factors affecting the demand for these shared bikes in the American market. We also want to:
+* Know which variables are significant in predicting the demand for shared bikes.
+* Know how well those variables describe the bike demands
+* Build a multiple linear regression model to predict the demand on a given day.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+Below are the conclusions after arriving at the final Model
+- The final model has a `Adj. R-squared` value of `0.835`, `Prob (F-statistic)` value of `2.00e-189` and `r2_score`  value of `0.797` on the test set.
+- From the coefficients of the model, we can say `temp` is the most impactful independent variable
+- `windspeed`, `weathersit_2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist` and `weathersit_3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds` correspond negatively to the target variable as can be explained in eneral by the data dictionary provided
+- Final Equation:
+   $  cnt = 0.233 \times yr + 0.055 \times workingday + 0.521 \times temp - 0.152 \times windspeed + 0.0998 \times summer + 0.139 \times winter + 0.066 \times weekday_6 + 0.051 \times mnth_8 + 0.112 \times mnth_9 - 0.084 \times weathersit_2 - 0.287 \times weathersit_3 + 0.081  $
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Pandas - Version 1.3.4
+- matplotlib - Version 3.4.3
+- Seaborn - Version 0.11.2
+- statsmodel
+- sklearn
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project mainly applies the concepts of Multiple Linear Regression.
+- The data dictionary provided by the client was used for understanding the data.
+- Resources on the web were consumed to understand various aspects of model building.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@akintaliarkin] - feel free to contact me!
 
 
 <!-- Optional -->
