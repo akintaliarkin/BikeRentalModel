@@ -22,8 +22,6 @@ Below are the conclusions after arriving at the final Model
 - The final model has a `Adj. R-squared` value of `0.835`, `Prob (F-statistic)` value of `2.00e-189` and `r2_score`  value of `0.797` on the test set.
 - From the coefficients of the model, we can say `temp` is the most impactful independent variable
 - `windspeed`, `weathersit_2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist` and `weathersit_3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds` correspond negatively to the target variable as can be explained in eneral by the data dictionary provided
-- Final Equation:
-   $  cnt = 0.233 \times yr + 0.055 \times workingday + 0.521 \times temp - 0.152 \times windspeed + 0.0998 \times summer + 0.139 \times winter + 0.066 \times weekday_6 + 0.051 \times mnth_8 + 0.112 \times mnth_9 - 0.084 \times weathersit_2 - 0.287 \times weathersit_3 + 0.081  $
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
